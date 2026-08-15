@@ -1,6 +1,8 @@
 import { getAgendaItemOrThrow, getThemesWithQuotes } from "@/lib/data";
 import { createTheme, updateTheme, deleteTheme } from "@/app/admin/actions";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminThemesPage() {
   const item = await getAgendaItemOrThrow();
   const themes = await getThemesWithQuotes(item.id);

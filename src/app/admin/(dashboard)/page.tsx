@@ -5,6 +5,8 @@ import { StatusBadge } from "@/components/StatusBadge";
 import { formatDate } from "@/lib/format";
 import type { ResponseStatus } from "@prisma/client";
 
+export const dynamic = "force-dynamic";
+
 function MetricTile({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-xl border border-border bg-surface p-4">

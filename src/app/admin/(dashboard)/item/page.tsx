@@ -1,6 +1,8 @@
 import { getAgendaItemOrThrow } from "@/lib/data";
 import { updateAgendaItem } from "@/app/admin/actions";
 
+export const dynamic = "force-dynamic";
+
 function toDateInputValue(date: Date): string {
   return date.toISOString().slice(0, 10);
 }

@@ -9,6 +9,8 @@ import { WhatWeHeard } from "@/components/WhatWeHeard";
 import { ResponseCard } from "@/components/ResponseCard";
 import { FeedbackForm } from "@/components/FeedbackForm";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const item = await getAgendaItem();
   if (!item) {

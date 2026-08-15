@@ -4,6 +4,8 @@ import { assignSubmissionTheme, setSubmissionFeatured } from "@/app/admin/action
 import { SubmissionRow } from "@/components/SubmissionRow";
 import { formatDate } from "@/lib/format";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminSubmissionsPage() {
   const item = await getAgendaItemOrThrow();
   const [submissions, themes] = await Promise.all([
